@@ -1,6 +1,16 @@
 import './App.css'
+import CustomerTicket from './Components/Body/CustomerTicket'
+import ResolvedTask from './Components/Body/ResolvedTask'
+import TaskStatus from './Components/Body/TaskStatus'
 import Hero from './Components/Hero-section/Hero'
+import { Suspense } from 'react'
+const ticketFetch = async () =>
+{
+   const res = await fetch('/ticket.json')
+   return res.json();
+}
 
+const ticketData = ticketFetch(); 
 function App() {
  
 
@@ -8,7 +18,18 @@ function App() {
     <>
      <Navbar></Navbar>
      <Hero></Hero>
-     <h1>Site Under Construction</h1>
+    <div className='max-w-550 mx-auto grid grid-cols-1 rounded-2xl mt-4 gap-3 md:grid-cols-3 '>
+      <div className='md:col-span-2'>
+        <Suspense fallback ={<span className="loading loading-spinner loading-xl"></span>}>
+          <CustomerTicket ticketData = {ticketData}></CustomerTicket>
+        </Suspense>
+      
+      </div>
+      <div className='md:col-span-1 bg-blue-600'>
+     <ResolvedTask></ResolvedTask>
+     <TaskStatus></TaskStatus>
+     </div>
+     </div>
 
     </>
   )

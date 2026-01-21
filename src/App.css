@@ -1,0 +1,22 @@
+*{
+ font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.bg-hero1 {
+  
+  background-image: url('./assets/vector1.png') , linear-gradient(
+      to right,
+      rgba(66, 42, 213, 0.85),
+      rgba(128, 90, 213, 0.85)
+    );
+}
+.bg-hero2 {
+  
+  background-image: url('./assets/vector1.png') , linear-gradient(
+      to right,
+      #54CF68,
+      #00827A
+    );
+}
+

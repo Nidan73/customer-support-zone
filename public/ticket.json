@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "title": "Unable to login to account",
+    "description": "Customer reports receiving an incorrect password error despite using the correct credentials.",
+    "customer": "John Doe",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-01-05"
+  },
+  {
+    "id": 2,
+    "title": "Payment failed during checkout",
+    "description": "Transaction fails at the final step with a timeout error.",
+    "customer": "Ayesha Rahman",
+    "priority": "Critical",
+    "status": "InProgress",
+    "createdAt": "2025-01-06"
+  },
+  {
+    "id": 3,
+    "title": "Feature request: Dark mode",
+    "description": "Customer would like a dark mode option for better usability at night.",
+    "customer": "Michael Smith",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2025-01-07"
+  },
+  {
+    "id": 4,
+    "title": "Email notifications not received",
+    "description": "User is not receiving any ticket update emails.",
+    "customer": "Sara Khan",
+    "priority": "Medium",
+    "status": "In-Progress",
+    "createdAt": "2025-01-08"
+  },
+  {
+    "id": 5,
+    "title": "Account suspended without reason",
+    "description": "Customer claims their account was suspended unexpectedly.",
+    "customer": "David Lee",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-01-09"
+  },
+  {
+    "id": 6,
+    "title": "Bug: Profile picture upload fails",
+    "description": "Uploading profile image results in a server error.",
+    "customer": "Nusrat Jahan",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2025-01-10"
+  },
+  {
+    "id": 7,
+    "title": "Slow dashboard loading",
+    "description": "Dashboard takes more than 10 seconds to load data.",
+    "customer": "Robert Brown",
+    "priority": "Medium",
+    "status": "InProgress",
+    "createdAt": "2025-01-11"
+  },
+  {
+    "id": 8,
+    "title": "Incorrect invoice generated",
+    "description": "Invoice shows incorrect tax calculation.",
+    "customer": "Fatima Noor",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-01-12"
+  },
+  {
+    "id": 9,
+    "title": "Two-factor authentication not working",
+    "description": "OTP is not delivered to the registered phone number.",
+    "customer": "Alex Johnson",
+    "priority": "Critical",
+    "status": "InProgress",
+    "createdAt": "2025-01-13"
+  },
+  {
+    "id": 10,
+    "title": "Request for account deletion",
+    "description": "Customer wants to permanently delete their account and data.",
+    "customer": "Maria Gonzalez",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2025-01-14"
+  },
+  {
+    "id": 11,
+    "title": "Unable to download reports",
+    "description": "Export button does not respond when clicked.",
+    "customer": "Tanvir Ahmed",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2025-01-15"
+  },
+  {
+    "id": 12,
+    "title": "Password reset email expired",
+    "description": "Reset link expires immediately after being sent.",
+    "customer": "Emily Wilson",
+    "priority": "High",
+    "status": "InProgress",
+    "createdAt": "2025-01-16"
+  },
+  {
+    "id": 13,
+    "title": "UI alignment issue on mobile",
+    "description": "Buttons overlap on smaller screen sizes.",
+    "customer": "Rahul Verma",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2025-01-17"
+  },
+  {
+    "id": 14,
+    "title": "Data not syncing in real time",
+    "description": "Live updates are delayed across devices.",
+    "customer": "Sophia Martinez",
+    "priority": "High",
+    "status": "InProgress",
+    "createdAt": "2025-01-18"
+  },
+  {
+    "id": 15,
+    "title": "Support chat disconnects frequently",
+    "description": "Chat session disconnects after a few minutes.",
+    "customer": "Imran Hossain",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2025-01-19"
+  }
+]
