@@ -58,10 +58,15 @@ This project is a React-based **Customer Support Zone** designed to display cust
 Create a README file to answer the following question-
 
  - What is JSX, and why is it used?
+  --- Jsx is Javasciprt XML  . it is used to create Component based Devloping 
  - What is the difference between State and Props?
+ --- State is a built-in React object that stores data local to a component and can change over time, causing the component to re-render.are read-only data passed from a parent component to a child component 
  - What is the useState hook, and how does it work?
+ --- useState is a Hook of react and it help to update a data dynamically in React
  - How can you share state between components in React?
+ --- can share it through props ... 
  - How is event handling done in React?
+ --- its UniDirectional from Paprent to child 
 
 ---
 
