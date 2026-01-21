@@ -54,7 +54,7 @@ function Navbar()
           <li><a>Download</a></li>
           <li><a>Contact</a></li>
           <li>
-            <button className="bg-gradient-to-r from-blue-500 to-purple-600 rounded text-white">
+            <button className="bg-gradient-to-r from-blue-500 to-purple-600 rounded text-white ">
               + New Ticket
             </button>
           </li>
