@@ -2,8 +2,9 @@ import React from 'react';
 import icon1 from '../../assets/Ellipse22.png'
 import cal from '../../assets/Vector3.png'
 import icon2 from '../../assets/Ellipse23.png'
+import { toast } from 'react-toastify';
 
-const Ticket = ({ticket}) => {
+const Ticket = ({ticket, setClick ,clickData , setProgress , countProgress}) => {
     const priorityColor = {
   Low: "text-green-500",
   Medium: "text-yellow-500",
@@ -15,9 +16,17 @@ const buttonColor = {
     Open : "bg-green-200",
     InProgress : "bg-yellow-200" ,
 };
+const handleClick = (ticket) => {
+    setClick([...clickData,ticket]);
+    const increase = countProgress +1 ;
+    setProgress(increase);
+    toast("Added to Task Status Bar");
+} 
     return (
         <div>
-        <div className="card mt-4 bg-base-100 w-140 h-40 shadow-sm">
+        <div  onClick={()=>handleClick(ticket)
+
+        } className="card mt-4 bg-base-100 md:w-140 h-40 shadow-sm">
   <div className="card-body">
     <div className='flex items-center justify-between'>
     <h2 className="card-title text-[15px]">{ticket.title}</h2>
