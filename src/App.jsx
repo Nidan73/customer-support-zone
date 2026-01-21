@@ -4,7 +4,7 @@ import ResolvedTask from './Components/Body/ResolvedTask'
 import TaskStatus from './Components/Body/TaskStatus'
 import Hero from './Components/Hero-section/Hero'
 import { Suspense, useState } from 'react'
-  import { ToastContainer } from 'react-toastify';
+  import { toast, ToastContainer } from 'react-toastify';
 
 const ticketFetch = async () =>
 {
@@ -16,15 +16,24 @@ const ticketData = ticketFetch();
 function App() {
  const [clickData, setClick] = useState([])
  const [countProgress , setProgress] = useState(0)
+ const [resolved , setResolved] = useState([])
+ const [countResolved , setCount] = useState(0)
 
  const handleRemove = (t) => {
    const filterTicket = clickData.filter(tic => tic.id !== t.id)
+   const filterTask = clickData.filter(task => task.id === t.id)
+   const resolvedData = [...resolved,filterTask]
+   const count= countResolved+1;
+   setCount(count)
+   setResolved(resolvedData)
    setClick(filterTicket)
  }
+
+
   return (
     <>
      <Navbar></Navbar>
-     <Hero countProgress = {countProgress}></Hero>
+     <Hero countResolved ={countResolved} countProgress = {countProgress}></Hero>
     <div className='max-w-550 mx-auto grid grid-cols-1 rounded-2xl mt-4 gap-3 md:grid-cols-3 '>
       <div className='md:col-span-2'>
         <Suspense fallback ={<span className="loading loading-spinner loading-xl"></span>}>
@@ -33,7 +42,7 @@ function App() {
       </div>
       <div className='md:col-span-1'>
      <TaskStatus setProgress ={setProgress} countProgress = {countProgress} handleRemove = {handleRemove} clickData={clickData}></TaskStatus>
-     <ResolvedTask></ResolvedTask>
+     <ResolvedTask resolved = {resolved} setResolved = {setResolved}></ResolvedTask>
      </div>
      </div>
      <ToastContainer />
