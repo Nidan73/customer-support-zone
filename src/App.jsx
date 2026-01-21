@@ -27,6 +27,7 @@ function App() {
    setCount(count)
    setResolved(resolvedData)
    setClick(filterTicket)
+   toast("Task Resolved")
  }
 
 
